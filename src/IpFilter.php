@@ -40,14 +40,12 @@ class IpFilter
                         $isallow = isset($option['allow']) ? $option['allow'] : false;
                     }
                 }
-                if ($isallow === false) {
-                    return $response->withStatus(403);
-                }
-                
-            }elseif (!Validator::ip($option['ip'])->validate($ipAddress)) {
+            }elseif (Validator::ip($option['ip'])->validate($ipAddress)) {
+                $isallow = isset($option['allow']) ? $option['allow'] : false;
+            }
+            if ($isallow === false) {
                 return $response->withStatus(403);
             }
-            
         }
         return $next($request, $response);
     }
