@@ -3,6 +3,7 @@
     "description": "A Slim middleware to restrict/allow ip addresses that will access to your routes",
     "keywords": ["slim","framework","middleware","ip", "address", "restriction", "restrict", "allowance","allow"],
     "type": "library",
+    "version" : "0.1.0",
     "authors": [
         {
             "name": "Juan Pablo Garcia",
