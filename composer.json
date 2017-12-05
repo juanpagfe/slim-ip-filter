@@ -1,0 +1,33 @@
+{
+    "name": "juanpagfe/slim-ip-filter",
+    "description": "A Slim middleware to restrict/allow ip addresses that will access to your routes",
+    "keywords": ["slim","framework","middleware","ip", "address", "restriction", "restrict", "allowance","allow"],
+    "type": "library",
+    "authors": [
+        {
+            "name": "Juan Pablo Garcia",
+            "email": "juanpagfe@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "akrabat/rka-ip-address-middleware": "~0.4",
+        "respect/validation": "^1.0"
+    },
+    "require-dev": {
+        "slim/slim": "~3.0",
+        "phpunit/phpunit": "^4.0",
+        "scrutinizer/ocular": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jpgfe\\Slim\\IpFilter\\": "src"
+        }
+    },
+    "license" : "GPL-2.0+",
+    "autoload-dev": {
+        "psr-4": {
+            "Jpgfe\\Slim\\IpFilter\\Tests\\": "tests"
+        }
+    }
+}
